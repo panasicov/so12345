@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  java_app:
+    build: .
+    container_name: java_app_container
+    volumes:
+      - ./Main.java:/app/Main.java # Montează fișierul local Main.java în container
+    stdin_open: true
+    tty: true
